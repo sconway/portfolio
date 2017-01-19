@@ -30,9 +30,6 @@
         }
     })
 
-    // Initialize Masonry Plugin
-    $(".portfolio-items").masonry({});
-
     // Floating label headings for the contact form
     $(function() {
         $("body").on("input propertychange", ".floating-label-form-group", function(e) {
@@ -51,6 +48,12 @@
         if (!$(this).val()) {
             $(this).parent().removeClass("floating-label-form-group-with-value");
         }
+    });
+
+    // Make sure everything has loaded so heights can be properly computed
+    $(window).load(function() {
+         // Initialize Masonry Plugin
+        $(".portfolio-items").masonry({});
     });
 
 })(jQuery); // End of use strict
