@@ -510,6 +510,10 @@ fieldset[disabled] .btn-success.active {
   border-radius: 50%;
 }
 
+.margin-right-5 {
+  margin-right: 5px;
+}
+
 .intro__img {
   width: 250px;
 }
